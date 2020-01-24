@@ -1,0 +1,24 @@
+<div class="bg">
+    <h3>Esse é meu primeiro componente</h3>
+    <p>Que legal</p>
+</div>
+
+<br>
+
+<div>
+    <h4>titulo:{{meuTitulo}}</h4>
+    <p>{{texto1 + texto2}}</p>
+    <p>Eae galerinha{{texto2}}</p>
+</div>
+<br>
+<div>
+<p>{{geraTexto()}}</p>
+</div>
+
+<div>
+    <p>{{cliente.id}} - {{cliente.nome}}</p>
+</div>
+
+<div *ngFor="let umCliente of clientes">
+    <p *ngIf="umCliente.ativo">{{umCliente.id}} - {{umCliente.nome}}</p>
+</div>
